@@ -12,7 +12,7 @@ apt-cache policy docker-ce && sudo apt install docker-ce
 
 docker volume create portainer_data && docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
 
-docker pull qmcgaw/gluetun && docker pull goodboy3/gaganode
+docker pull qmcgaw/gluetun && docker pull jepbura/gaganode
 
 sudo ufw allow 443 && sudo ufw allow 36060
 
